@@ -1,0 +1,134 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Contenu principal */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+/* Section des articles */
+section {
+    flex: 3;
+}
+
+/* Articles */
+article {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+article a:hover {
+    background: #2563eb;
+}
+
+/* Barre latérale */
+aside {
+    flex: 1;
+    margin-left: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+aside ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Formulaire */
+form {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #2563eb;
+}
+
+/* Pied de page */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
