@@ -1,134 +1,138 @@
-/* Réinitialisation */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-/* Corps de la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
 }
 
-/* En-tête */
-header {
-    background-color: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    margin-top: 15px;
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav{
+    background:#0059b3;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
-nav ul li a:hover {
-    color: #ffd700;
+nav ul li a{
+    display:block;
+    padding:15px 20px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-/* Contenu principal */
-main {
-    display: flex;
-    padding: 20px;
+nav ul li a:hover{
+    background:#003366;
 }
 
-/* Section des articles */
-section {
-    flex: 3;
+main{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
 }
 
-/* Articles */
-article {
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.hero{
+    text-align:center;
+    background:white;
+    padding:60px 20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-article img {
-    width: 100%;
-    border-radius: 8px;
-    margin: 10px 0;
+.hero h2{
+    color:#003366;
+    margin-bottom:20px;
+    font-size:2rem;
 }
 
-article a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #1e3a8a;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
+.btn{
+    display:inline-block;
+    background:#0059b3;
+    color:white;
+    padding:12px 25px;
+    border-radius:6px;
+    text-decoration:none;
 }
 
-article a:hover {
-    background: #2563eb;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-/* Barre latérale */
-aside {
-    flex: 1;
-    margin-left: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    height: fit-content;
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-aside ul {
-    margin-top: 10px;
-    padding-left: 20px;
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
 }
 
-/* Formulaire */
-form {
-    background: white;
-    width: 80%;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 10px;
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
 }
 
-input[type="submit"] {
-    background: #1e3a8a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
 }
 
-input[type="submit"]:hover {
-    background: #2563eb;
+button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    background:#0059b3;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
 }
 
-/* Pied de page */
-footer {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
